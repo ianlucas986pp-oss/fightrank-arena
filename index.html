@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#8b0000">
+    <meta charset="UTF-8">
+    <title>FightRank Arena</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="app">
+
+  <h1>🥋 FightRank Arena</h1>
+
+  <div class="perfil">
+
+    <input id="nome" placeholder="Nome do lutador">
+
+    <select id="estilo">
+
+      <option>Karatê</option>
+
+      <option>Boxe</option>
+
+      <option>Muay Thai</option>
+
+      <option>Jiu-Jitsu</option>
+
+      <option>MMA</option>
+
+    </select>
+
+    <button onclick="criarPerfil()">Criar Perfil</button>
+
+  </div>
+  
+  <button onclick="resetarMeuPerfil()" style="background:#8b0000;">
+
+  🔒 Resetar Meu Perfil
+
+</button>
+
+  <div id="status"></div>
+
+  <div class="desafios">
+
+    <h2>Desafios</h2>
+
+    <button onclick="ganharXP(10)">🥊 Treinar Socos</button>
+
+    <button onclick="ganharXP(15)">🦵 Treinar Chutes</button>
+
+    <button onclick="ganharXP(25)">🔥 Treino Completo</button>
+
+  </div>
+
+  <div class="chat">
+
+    <h2>Chat Global</h2>
+
+    <div id="mensagens"></div>
+
+    <input id="msg" placeholder="Mensagem">
+
+    <button onclick="enviarMsg()">Enviar</button>
+
+  </div>
+
+</div>
+
+<div class="ranking">
+
+  <h2>🌍 Ranking Global</h2>
+
+  <div id="rankingDiv"></div>
+
+</div>
+
+<div class="luta">
+
+  <h2>⚔️ Desafiar Lutador</h2>
+
+  <select id="oponente"></select>
+
+  <button onclick="lutar()">Lutar</button>
+
+</div>
+
+<div class="historico">
+
+  <h2>📜 Histórico de Lutas</h2>
+
+  <div id="historicoDiv"></div>
+
+</div>
+
+<button onclick="desafioDiario()">🎯 Desafio Diário</button>
+
+<button onclick="adminReset()" style="background:black;">
+
+  🧠 Admin Reset (Protegido)
+
+</button>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
