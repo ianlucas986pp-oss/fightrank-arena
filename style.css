@@ -1,0 +1,89 @@
+body {
+
+  background: #0f0f0f;
+
+  font-family: Arial;
+
+  color: white;
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+.app {
+
+  width: 360px;
+
+  background: #1c1c1c;
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+}
+
+button {
+
+  margin: 5px 0;
+
+  padding: 8px;
+
+  width: 100%;
+
+  background: crimson;
+
+  border: none;
+
+  color: white;
+
+  cursor: pointer;
+
+}
+
+input, select {
+
+  width: 100%;
+
+  margin: 5px 0;
+
+  padding: 6px;
+
+}
+
+#mensagens {
+
+  height: 100px;
+
+  background: #000;
+
+  overflow-y: auto;
+
+  margin-bottom: 5px;
+
+  padding: 5px;
+
+}
+
+.luta, .historico, .ranking {
+
+  margin-top: 15px;
+
+  background: #141414;
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+}
+
+select {
+
+  background: #000;
+
+  color: white;
+
+  border: 1px solid #333;
+
+}
