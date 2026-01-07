@@ -307,7 +307,3 @@ function adminReset() {
   alert("✅ Reset total realizado (Admin Mode).");
 
 }
-
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js");
-}
